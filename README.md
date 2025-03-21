@@ -152,46 +152,7 @@ The system works through the following flow:
    - `new_param_sweep2.py` for configuration optimization
    - `new_lcoe.py` for economic analysis
 
-## Key Features and Considerations
-
-### Realistic Modeling
-- **Geographic Specificity**: Calculations based on precise latitude/longitude
-- **Weather Effects**: Cloud patterns modeled with seasonal variations
-- **Consumption Patterns**: Household usage with realistic daily/seasonal patterns
-- **Battery Dynamics**: Efficiency losses during charging and discharging
-
-### System Aging
-- Panel efficiency degradation over time (typically 0.5% per year)
-- Distinct simulations for new vs. aged systems
-- Aging factors incorporated into LCOE calculations
-
-### Performance Optimization
-- Caching mechanisms for repetitive calculations
-- Memory management for large parameter sweeps
-- Optimized algorithms for multi-day simulations
-
-### Economic Analysis
-- Capital and maintenance costs for panels and batteries
-- Component replacement at different lifecycle points
-- Present value calculations with discount rates
-- Detailed LCOE output for different configurations
-
-## Customization
-
-The system is highly customizable through the parameter files and function arguments. Key customization points include:
-
-- Geographic location (latitude/longitude)
-- Panel specifications (area, efficiency)
-- Battery capacity and efficiency
-- System age and degradation rates
-- Simulation timeframes (start date, duration)
-- Economic parameters (costs, discount rate, lifetimes)
-
 ## Limitations
 
-- The simulation uses synthetic cloud patterns rather than actual weather data
-- Household consumption is based on statistical models rather than actual smart meter data
-- The system does not model specific inverter characteristics or DC/AC conversion losses
-- Grid interaction is simplified (energy is either used, stored, or wasted)
 - This whole package was vibe-coded with Claude 3.7 Sonnet, and while I've done my best to verify the outputs I wouldn't swear to its accuracy. The solar panel degradation calculation in particular was added very late and I didn't spend much time checking to make sure it was producing sensible outputs. Use at your own risk!
 
