@@ -47,7 +47,7 @@ Simulates solar panel energy generation and usage:
 - Models actual energy coverage accounting for time-of-generation vs. consumption
 - Provides functions for analyzing system performance with or without storage
 
-### Advanced Analysis Scripts
+### Analysis Scripts
 
 #### `multi_day_simulation.py`
 Performs detailed multi-day simulations with hourly resolution:
